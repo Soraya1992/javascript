@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="widht=device-witdht, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"
+    <title>exercice3</title>
+  </head>
+  <body>
+    <form>
+      <!-- l'évènement onkeyup relatif au fait de relacher la touch -->
+    <label for="lastname">Votre nom  : </label><input type="text" name="lastname" id="lastname" onkeyup="text()" />
+  </form>
+  <script>
+    function text(){
+      var lastname = document.getElementById('lastname').value;
+      // Permet d'afficher la boite de dialogue avec la valeur du champs dès que l'on appui surt le clavier
+      alert('Vous avez appuyé sur ' + lastname);
+    }
+  </script>
+  </body>
+</html>

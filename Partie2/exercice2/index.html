@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>exercice2</title>
+  </head>
+  <body>
+
+    <form>
+     <!-- L'événement onfocusout se produit lorsqu'un élément est sur le point de perdre le focus. -->
+    <label for="lastname">Votre nom  : </label><input type="text" name="lastname" id="lastname" onfocusout="text()" />
+  </form>
+  <script>
+    function myFunction(){
+      var name = document.getElementById('#lastname');
+      if (name.lenght > 0) {
+        alert("Merci de votre participation");
+      }
+      else {
+      alert("Veuillez saisir votre nom");
+      }
+      }
+  </script>
+  </body>
+</html>
